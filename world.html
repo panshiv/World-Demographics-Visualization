@@ -20,29 +20,35 @@
 <section id="world">
     <h2>World</h2>
     <div class="image-container">
-      <img src="D:\Coderush\population_scraper\Plottings\Year\total_pop_over_time.png" alt="World Image">
+      <img src="D:\Coderush\population_scraper\Plottings\Year\total_pop_over_time.png" alt="World Image" onclick="showFullScreenImage(this.src)">
       <div class="image-info">This plot showing the total population of world over past 70 years.</div>
     </div>
     <div class="image-container">
-      <img src="D:\Coderush\population_scraper\Plottings\Year\population_increment.png" alt="World Image">
+      <img src="D:\Coderush\population_scraper\Plottings\Year\population_increment.png" alt="World Image" onclick="showFullScreenImage(this.src)">
       <div class="image-info">This plot shows the increment rate of populatio over past 70  years.</div>
     </div>
     <div class="image-container">
-      <img src="D:\Coderush\population_scraper\Plottings\Year\heighest_increment.png" alt="Country Image">
+      <img src="D:\Coderush\population_scraper\Plottings\Year\heighest_increment.png" alt="Country Image" onclick="showFullScreenImage(this.src)">
       <div class="image-info">This bargraph shows the year having heighest population increment rate.</div>
     </div>
     <div class="image-container">
-      <img src="D:\Coderush\population_scraper\Plottings\Year\lowest_increment.png" alt="Country Image">
+      <img src="D:\Coderush\population_scraper\Plottings\Year\lowest_increment.png" alt="Country Image" onclick="showFullScreenImage(this.src)">
       <div class="image-info">This bargraph shows the year having least population increment rate.</div>
     </div>
     <div class="image-container">
-      <img src="D:\Coderush\population_scraper\Plottings\Year\heighest_density.png" alt="Country Image">
+      <img src="D:\Coderush\population_scraper\Plottings\Year\heighest_density.png" alt="Country Image" onclick="showFullScreenImage(this.src)">
       <div class="image-info">This bargraph shows the year having heighest population density in the world.</div>
     </div>
     <div class="image-container">
-      <img src="D:\Coderush\population_scraper\Plottings\Year\lowest_density.png" alt="Country Image">
+      <img src="D:\Coderush\population_scraper\Plottings\Year\lowest_density.png" alt="Country Image" onclick="showFullScreenImage(this.src)">
       <div class="image-info">This bargraph shows the year having lowest population density in the world.</div>
     </div>
   </section>
+  <div id="image-modal" class="modal">
+    <span class="close" onclick="closeFullScreenImage()">&times;</span>
+    <img id="modal-image" src="" alt="Modal Image">
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

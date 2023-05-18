@@ -20,37 +20,43 @@
   <section id="country">
     <h2>Country</h2>
     <div class="image-container">
-      <img src="D:\Coderush\population_scraper\Plottings\Country\most_populated.png" alt="Country Image">
+      <img src="D:\Coderush\population_scraper\Plottings\Country\most_populated.png" alt="Country Image" onclick="showFullScreenImage(this.src)">
       <div class="image-info">This bargraph shows the top 10 countries with heighest population.</div>
     </div>
     <div class="image-container">
-      <img src="D:\Coderush\population_scraper\Plottings\Country\least_populated.png" alt="Country Image">
+      <img src="D:\Coderush\population_scraper\Plottings\Country\least_populated.png" alt="Country Image" onclick="showFullScreenImage(this.src)">
       <div class="image-info">This bargraph shows the top 10 countries with least population.</div>
     </div>
     <div class="image-container">
-      <img src="D:\Coderush\population_scraper\Plottings\Country\heighest_density.png" alt="Country Image">
+      <img src="D:\Coderush\population_scraper\Plottings\Country\heighest_density.png" alt="Country Image" onclick="showFullScreenImage(this.src)">
       <div class="image-info">This bargraph shows the  top 10 countries having heighest population density.</div>
     </div>
     <div class="image-container">
-      <img src="D:\Coderush\population_scraper\Plottings\Country\least_density.png" alt="Country Image">
+      <img src="D:\Coderush\population_scraper\Plottings\Country\least_density.png" alt="Country Image" onclick="showFullScreenImage(this.src)">
       <div class="image-info">This bargraph shows the  top 10 countries having lowest population density.</div>
     </div>
     <div class="image-container">
-      <img src="D:\Coderush\population_scraper\Plottings\Country\emmigrants.png" alt="Country Image">
+      <img src="D:\Coderush\population_scraper\Plottings\Country\emmigrants.png" alt="Country Image" onclick="showFullScreenImage(this.src)">
       <div class="image-info">This bargraph shows the top 10 countries having heighest number of emmigrants.</div>
     </div>
     <div class="image-container">
-      <img src="D:\Coderush\population_scraper\Plottings\Country\urban_population.png" alt="Country Image">
+      <img src="D:\Coderush\population_scraper\Plottings\Country\urban_population.png" alt="Country Image" onclick="showFullScreenImage(this.src)">
       <div class="image-info">This plot shows each country's percentage of their population living the urban areas as compared 
         to the average value.</div>
     </div>
     <div class="image-container">
-      <img src="D:\Coderush\population_scraper\Plottings\Country\worldshare_pie.png" alt="Country Image">
+      <img src="D:\Coderush\population_scraper\Plottings\Country\worldshare_pie.png" alt="Country Image" onclick="showFullScreenImage(this.src)">
       <div class="image-info">This pie chart shows the 10 countries with hieghest contribution to the world 
         population.It also shows the contribution of other countires combined.
       </div>
     </div>
   </section>
-  <!-- <script src="script.js"></script> -->
+
+  <div id="image-modal" class="modal">
+    <span class="close" onclick="closeFullScreenImage()">&times;</span>
+    <img id="modal-image" src="" alt="Modal Image">
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

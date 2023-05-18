@@ -20,17 +20,23 @@
 <section id="region">
     <h2>Region</h2>
     <div class="image-container">
-      <img src="D:\Coderush\population_scraper\Plottings\Regions\Population_regions.png" alt="Region Image">
+      <img src="D:\Coderush\population_scraper\Plottings\Regions\Population_regions.png" alt="Region Image" onclick="showFullScreenImage(this.src)">
       <div class="image-info">This bargraph shows the population of each regions of world.</div>
     </div>
     <div class="image-container">
-      <img src="D:\Coderush\population_scraper\Plottings\Regions\Net_migrants_region.png" alt="Region Image">
+      <img src="D:\Coderush\population_scraper\Plottings\Regions\Net_migrants_region.png" alt="Region Image" onclick="showFullScreenImage(this.src)">
       <div class="image-info">This bargraph shows the Net Migrants of each region.</div>
     </div>
     <div class="image-container">
-      <img src="D:\Coderush\population_scraper\Plottings\Regions\worldshare_pie_regions.png" alt="Country Image">
+      <img src="D:\Coderush\population_scraper\Plottings\Regions\worldshare_pie_regions.png" alt="Country Image" onclick="showFullScreenImage(this.src)">
       <div class="image-info">The Pie chart above shows the percentage of contibution done to world population bye each region.</div>
     </div>
   </section>
+  <div id="image-modal" class="modal">
+    <span class="close" onclick="closeFullScreenImage()">&times;</span>
+    <img id="modal-image" src="" alt="Modal Image">
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
